@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db_nextjs:
+    container_name: db_nextjs
+    image: mysql
+    ports:
+      - 3306:3306
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: "db_nextjs"
+      MYSQL_USER: "soerjo"
+      MYSQL_PASSWORD: "soerjo1234"
+      MYSQL_ROOT_PASSWORD: "root1234"
