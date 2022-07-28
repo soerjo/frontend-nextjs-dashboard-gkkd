@@ -6,18 +6,18 @@ import News from "../components/News";
 const Home: NextPage = () => {
   return (
     <>
-      <main className="container px-4 mx-auto flex flex-wrap items-center justify-between ">
-        <div className="flex flex-wrap bg-white w-full">
-          <div className=" w-full lg:basis-2/3 p-2">
+      <main className="container px-8 mx-auto flex flex-wrap items-center justify-between bg-white">
+        <div className="flex flex-wrap md:flex-nowrap  items-center w-full gap-2">
+          <div className=" w-full lg:basis-2/3">
             <Banner />
           </div>
-          <div className="drop-shadow-lg w-full lg:basis-1/3  p-2 pr-4">
+          <div className="drop-shadow-lg w-full lg:basis-1/3">
             <News />
           </div>
         </div>
 
-        <div className="flex pt-2 p-2 w-full bg-white ">
-          <div className="drop-shadow-lg w-full bg-white  rounded-sm">
+        <div className="flex pt-2 p-2 w-full ">
+          <div className="w-full">
             <EventList />
           </div>
         </div>

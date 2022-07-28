@@ -87,7 +87,13 @@ const ContentComp: FunctionComponent<{ message: Message }> = ({ message }) => {
       <a href={`#${message.id}`}>
         <div className="flex flex-row items-center py-2">
           <div className=" w-2 h-10 mr-3 basis-1/6 ">
-            <div className="bg-teal-300 rounded-full w-12 h-12 mx-auto"></div>
+            <div className="bg-fuchsia-500 rounded-full w-12 h-12 mx-auto">
+              <img
+                src="/icons/blesscomn.svg"
+                alt="logo"
+                className="p-1 translate-y-1"
+              />
+            </div>
           </div>
           <div className="flex flex-col basis-5/6">
             <h4 className="font-bold text-slate-700">{message.title}</h4>

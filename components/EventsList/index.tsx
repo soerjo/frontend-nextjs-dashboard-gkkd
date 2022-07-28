@@ -57,14 +57,14 @@ const EventList = () => {
   const [fliers, setFliers] = useState<FlierType[]>(EventFliers);
 
   return (
-    <div className="  flex flex-col p-2 ">
+    <div className="  flex flex-col p-8 ">
       {/* header */}
       <div className="flex flex-row">
         <div className="basis-3/4">
           <h3>Events</h3>
         </div>
         <div className="basis-1/4">
-          <ul className="flex flex-row">
+          <ul className="flex flex-row justify-end">
             <li className="text-sm font-light px-1 hover:bg-slate-100 hover:cursor-pointer">
               Blesscomn
             </li>

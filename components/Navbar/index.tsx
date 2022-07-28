@@ -86,18 +86,17 @@ export const Navbar = () => {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               {paths.map((path, index) => (
-                <li key={index} className="nav-item">
+                <Link key={index} className="nav-item" href={path.link}>
                   <a
                     className={`text-purple-700 px-3 py-2 flex items-center text-sm uppercase ${
                       router.pathname === path.link
                         ? "font-bold"
                         : "font-normal"
                     } leading-snug  hover:opacity-40`}
-                    href={path.link}
                   >
                     <span className="ml-2">{path.pathName}</span>
                   </a>
-                </li>
+                </Link>
               ))}
             </ul>
           </div>
