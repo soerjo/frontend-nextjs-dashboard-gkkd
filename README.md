@@ -7,4 +7,3 @@ this repo is for the frontend of church dashboard.
 -Nextjs
 -Reactjs
 -Tailwind
--call api to backend
